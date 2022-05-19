@@ -257,7 +257,7 @@ def check_reachability_buggy(k):
     f = OUTPUT_DIR + 'fattree_vf_buggy_{}_reach.in'.format(k)
     write_ir(ir, f)
 
-def write_ir(ir, f, validate=True):
+def write_ir(ir, f, validate=False):
     ir.write(f)
     print("Written IR.")
     if validate:

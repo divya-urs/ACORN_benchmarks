@@ -180,7 +180,7 @@ def check_isolation(k):
     f = OUTPUT_DIR + 'fattree_ext_acc_{}_isolation.in'.format(k)
     write_ir(ir, f)
 
-def write_ir(ir, f, validate=True):
+def write_ir(ir, f, validate=False):
     ir.write(f)
     print("Written IR.")
     if validate:
